@@ -8,6 +8,8 @@ from fractions import Fraction
 
 global red_low, red_high, green, SBD
 
+# TEST
+
 
 def isolateLED(camera): # Masks the image to isolate the LEDs
     image = picamera.array.PiRGBArray(camera) # Define Image
