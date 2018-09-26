@@ -9,6 +9,11 @@ import smbus
 from fractions import Fraction
 import FunctionsForMiniProject as ffmp
 
+#import Adafruit_CharLCD as LCD
+#Initialize LCD screen
+#lcd = LCD.Adafruit_CharLCDPlate()
+
+
 # Camera setup
 camera = PiCamera() # Initialising camera object
 camera.resolution = (320, 170) # Setting camera resolution (lower for speed)
@@ -27,5 +32,7 @@ while(True):
     color = ffmp.detColor(masked) # Determine the color LED (if any)
     print(color, "\n") # Print out the color found
     ffmp.writeNumber(color)   
+    #lcd.clear()
+    #lcd.message("swag")
     
     
