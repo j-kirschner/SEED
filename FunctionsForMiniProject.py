@@ -34,6 +34,10 @@ def writeNumber(value):
 # bus.write_byte_data(address, 0, value)
     return -1
 
+def readNumber():
+    #number = bus.read_i2c_data_block(address,0,2)
+    #number = bus.read_byte(address) #Read a byte from the arduino
+    return number
 
 def isolateLED(camera): # Masks the image to isolate the LEDs
     image = picamera.array.PiRGBArray(camera) # Define Image
