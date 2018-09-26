@@ -31,7 +31,8 @@ while(True):
     # cv2.waitKey(0)
     color = ffmp.detColor(masked) # Determine the color LED (if any)
     print(color, "\n") # Print out the color found
-    ffmp.writeNumber(color)   
+    ffmp.writeNumber(color) 
+    #Speed = ffmp.readNumber()
     #lcd.clear()
     #lcd.message("swag")
     
